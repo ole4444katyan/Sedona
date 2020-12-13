@@ -4,16 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>Седона-"Добро пожаловать в городок мечты!"</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="page-body">
+<body class="body">
   <header class="header">
-    <a class="header__logo">
-      <img class="header__logo-image" src="" width="102" height="84" alt="SEDONA»">
-    </a>
-
-    <button class="header__button-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
-
     <nav class="header__nav header-nav">
       <div class="header-nav__wrapper">
         <button class="header-nav__button-close" type="button"><span class="visually-hidden">Закрыть
@@ -42,16 +37,26 @@
         </ul>
       </div>
     </nav>
+    <div class="header__logo">
+      <a class="logo">
+        <img class="header__logo-image" src="./img/svg/logotype-mobile.svg.svg" width="102" height="84" alt="SEDONA»">
+      </a>
+
+      <button class="header__button-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    </div>
+
 
   </header>
-  <main class="page-main">
+  <main class="main">
     <h1 class="visually-hidden">Описание, преимущества и причины здесь жить</h1>
     <section class="intro">
       <div class="intro__wrapper">
         <div class="intro__header-vector vector">
-          <h1 class="vector__header">CEDONA <br>(vector)</h1>
-          <p class="vector__text-welcome">WELCOME <br> -to the gorgeous- <br> (группа векторов сверху)</p>
-          <p class="vector__text-slogan">"Becouse the Grand <br>Canyon sucks!"<br>(группа векторов снизу)</p>
+          <h1 class="vector__header"><img src="./img/svg/SEDONA.svg" alt="SEDONA"></h1>
+          <p class="vector__text-welcome"><img src="./img/svg/WELCOME.svg" alt="WELCOME"></p>
+          <p class="vector__text"><img src="./img/svg/-to the gorgeous-.svg" alt="-to the gorgeous-"></p>
+          <p class="vector__text-slogan"><img src="./img/svg/because the Grand Canyon sucks.svg"
+              alt="because the Grand Canyon sucks"></p>
         </div>
         <div class="intro__slogan">
           <p class="intro__slogan-text">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -60,16 +65,16 @@
       </div>
     </section>
     <section class="first-reason">
-      <div class="first-reason__wrapper">
-        <h2 class="first-reason__header">Настоящий городок</h2>
-        <span class="first-reason_number">№1</span>
-        <p class="first-reason__text">Cедона не аттракцион для туристов, там течет своя жизнь</p>
-        <img src="" alt="Уютный домик снаружи">
+      <div class="first-reason__wrapper reason">
+        <h2 class="first-reason__header title-text">Настоящий городок</h2>
+        <span class="first-reason_number text">№1</span>
+        <p class="first-reason__text text">Cедона не аттракцион для туристов, там течет своя жизнь</p>
+        <img src="./img/mobile/photo-city@1x 1.png" alt="Уютный домик снаружи">
       </div>
     </section>
     <section class="features">
       <h2 class="visually-hidden">Наши преимущества</h2>
-      <div class="features__wrapper">
+      <div class="features__wrapper ">
         <ul class="features__list">
           <li class="features__item features__item_house">
             <h3 class="features__title">Жилье</h3>
@@ -87,11 +92,11 @@
       </div>
     </section>
     <section class="second-reason">
-      <div class="second-reason__wrapper">
-        <h2 class="second-reason__header">Там есть мост дьявола</h2>
-        <span class="second-reason__number">№2</span>
-        <p class="second-reason__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-        <img src="" alt="Очаровательный мост дьявола между каньонами">
+      <div class="second-reason__wrapper reason">
+        <h2 class="second-reason__header title-text">Там есть мост дьявола</h2>
+        <span class="second-reason__number text">№2</span>
+        <p class="second-reason__text text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        <img src="./img/mobile/photo-bridge@1x 1.png" alt="Очаровательный мост дьявола между каньонами">
       </div>
     </section>
     <section class="other-reasons">
@@ -99,19 +104,19 @@
       <div class="other-reasons__wrapper">
         <ul class="other-reasons__list">
           <li class="other-reasons__item">
-            <h3 class="other-reasons__title">Небольшая площадь</h3>
-            <span class="other-reasons__number">№3</span>
-            <p class="other-reasons__desc">Все интересные места находятся очень близко</p>
+            <h3 class="other-reasons__title black-title-text">Небольшая площадь</h3>
+            <span class="other-reasons__number black-text">№3</span>
+            <p class="other-reasons__desc black-text">Все интересные места находятся очень близко</p>
           </li>
           <li class="other-reasons__item">
-            <h3 class="other-reasons__title">Красивая дорога</h3>
-            <span class="other-reasons__number">№4</span>
-            <p class="other-reasons__desc">хать в седону из Лас-Вегаса совсем не скучно!</p>
+            <h3 class="other-reasons__title black-title-text">Красивая дорога</h3>
+            <span class="other-reasons__number black-text">№4</span>
+            <p class="other-reasons__desc black-text">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="other-reasons__item">
-            <h3 class="other-reasons__title">Мало туристов</h3>
-            <span class="other-reasons__number">№5</span>
-            <p class="other-reasons__desc">Большинство едет в Гранд каньон и толпится там</p>
+            <h3 class="other-reasons__title black-title-text">Мало туристов</h3>
+            <span class="other-reasons__number black-text">№5</span>
+            <p class="other-reasons__desc black-text">Большинство едет в Гранд каньон и толпится там</p>
           </li>
         </ul>
       </div>
@@ -119,26 +124,27 @@
     <section class="form-popup">
       <div class="form-popup__wrapper">
         <h2 class="form-popup__title">Заинтересовались?</h2>
-        <p class="form-popup__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-        <a href="form.html" class="form-popup__button-link"></a>
+        <p class="form-popup__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+          Cедоне</p>
+        <a href="form.html" class="form-popup__button-link">Найти гостиницу</a>
       </div>
     </section>
     <section class="map">
-      <div class="map__land">*vector*</div>
-      <div class="map__icon">*vector*</div>
+      <div class="map__land"> <img src="./img/mobile/map-mobile.jpg.png" alt=""></div>
+      <div class="map__icon"><img src="./img/svg/map-marker.svg.svg" alt=""></div>
     </section>
   </main>
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <h2 class="page-footer__title">#visitsedona</h2>
-      <ul class="page-footer__social social">
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <h2 class="footer__title">#visitsedona</h2>
+      <ul class="footer__social social">
         <li class="social__item"><a href="twitter.ru" class="social__link_twitter">tw</a></li>
         <li class="social__item"><a href="fb.ru" class="social__link_facebook">fb</a></li>
         <li class="social__item"><a href="youtube.ru" class="social__link_toytube">u</a></li>
       </ul>
-      <div class="page-footer__copyright copyright">
+      <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">svg</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/svg/htmlacademy.svg" alt="" width="27px"></a>
       </div>
     </div>
   </footer>
