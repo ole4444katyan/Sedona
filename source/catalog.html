@@ -9,13 +9,10 @@
 
 <body class="body">
   <header class="header">
-    <a class="header__logo">
-      <img class="header__logo-image" src="" width="102" height="84" alt="SEDONA»">
-    </a>
-    <button class="header__button-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <nav class="header__nav header-nav">
       <div class="header-nav__wrapper">
-        <button class="header-nav__button-close" type="button"><span class="visually-hidden">Закрыть
+        <button class="header-nav__button-close" type="button"><img src="./img/svg/btn-close.svg" alt="Закрыть
+          меню" width="22px"><span class="visually-hidden">Закрыть
             меню</span></button>
         <ul class="header-nav__list site-list">
           <li class="site-list__item">
@@ -41,54 +38,74 @@
         </ul>
       </div>
     </nav>
+    <div class="header__logo">
+      <a class="logo" href="index.html">
+        <img class="header__logo-image" src="./img/svg/logotype-mobile.svg.svg" width="102" height="84" alt="SEDONA»">
+      </a>
+
+      <button class="header__button-open" type="button"> <img src="./img/svg/btn-open.svg" alt="Открыть меню"
+          width="22px"><span class="visually-hidden">Открыть меню</span></button>
+    </div>
+    <button class="header__button-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
   </header>
   <main class="main">
     <section class="intro">
-      <h1></h1>
+
+      <div class="intro__wrapper">
+
+        <div class="vector">
+          <h1><img class="vector__header" src="./img/svg/SEDONA.svg" alt="SEDONA" width="229px" height="39px"></h1>
+        </div>
+
+        <h1 class="intro__title title-text">Фото и видео</h1>
+        <p class="intro__text text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </div>
+
     </section>
     <section class="photo">
       <h2 class="visually hidden"></h2>
       <div class="photo-wrapper">
         <div class="card">
-          <img class="card__photo" src="" alt="Дорога на закате">
+          <img class="card__photo" src="./img/mobile/photo-1-mobile.jpg.jpg" alt="Дорога на закате">
           <div class="card__description description">
-            <h3 class="description__title">Неродные просторы</h3>
-            <cite class="description__author">Автор фото: <span class="description__author_name">Борис</span></cite>
+            <h3 class="description__title title-text-catalog">Неродные просторы</h3>
+            <cite class="description__author text-catalog">Автор фото: <span class="description__author_name">Борис</span></cite>
             <p class="like-counter">
-              <button class="thumb_up" type="button">a<span class="likes-number">1350</span></button>
+              <button class="thumb_up" type="button"><img src="./img/svg/like-icon.svg.svg" alt="" width="23px"><span class="likes-number">1350</span></button>
             </p>
           </div>
         </div>
 
         <div class="card">
-          <img class="card__photo" src="" alt="Цветущая веточка на фоне красных гор">
+          <img class="card__photo" src="./img/mobile/photo-2-mobile.jpg.png" alt="Цветущая веточка на фоне красных гор">
           <div class="card__description description">
-            <h3 class="description__title">Местная растительность</h3>
-            <cite class="description__author">Автор фото: <span class="description__author_name">Сергей</span></cite>
+            <h3 class="description__title title-text-catalog">Местная растительность</h3>
+            <cite class="description__author text-catalog">Автор фото: <span class="description__author_name">Сергей</span></cite>
             <p class="like-counter">
-              <button class="thumb_up" type="button">a<span class="likes-number">143</span></button>
+              <button class="thumb_up" type="button"><img src="./img/svg/like-icon.svg.svg" alt="" width="23px"><span class="likes-number">143</span></button>
             </p>
           </div>
         </div>
 
         <div class="card">
-          <img class="card__photo" src="" alt="Хвойная дорога в гору">
+          <img class="card__photo" src="./img/mobile/photo-3-mobile.jpg.png" alt="Хвойная дорога в гору">
           <div class="card__description description">
-            <h3 class="description__title">Дорога на север</h3>
-            <cite class="description__author">Автор фото: <span class="description__author_name">Петр</span></cite>
+            <h3 class="description__title title-text-catalog">Дорога на север</h3>
+            <cite class="description__author text-catalog">Автор фото: <span class="description__author_name">Петр</span></cite>
             <p class="like-counter">
-              <button class="thumb_up" type="button">a<span class="likes-number">96</span></button>
+              <button class="thumb_up" type="button"><img src="./img/svg/like-icon.svg.svg" alt="" width="23px"><span class="likes-number">96</span></button>
             </p>
           </div>
         </div>
 
         <div class="card">
-          <img class="card__photo" src="" alt="Каменный Мост Дьявола">
+          <img class="card__photo" src="./img/mobile/photo-4-desktop 1.png" alt="Каменный Мост Дьявола">
           <div class="card__description description">
-            <h3 class="description__title">Мост Дьявола</h3>
-            <cite class="description__author">Автор фото: <span class="description__author_name">Антон</span></cite>
+            <h3 class="description__title title-text-catalog">Мост Дьявола</h3>
+            <cite class="description__author text-catalog">Автор фото: <span class="description__author_name">Антон</span></cite>
             <p class="like-counter">
-              <button class="thumb_up" type="button">a<span class="likes-number">254</span></button>
+              <button class="thumb_up" type="button"><img src="./img/svg/like-icon.svg.svg" alt="" width="23px"><span class="likes-number">254</span></button>
             </p>
           </div>
         </div>
@@ -96,9 +113,9 @@
     </section>
     <section class="video">
       <div class="video__wrapper">
-        <h2 class="video__title">Все еще сомневаетесь?</h2>
-        <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video controls poster="">
+        <h2 class="video__title title-text">Все еще сомневаетесь?</h2>
+        <p class="text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <video controls poster="./img/mobile/video-mobile.jpg.png">
           <source src="" type="">
           <source src="" type="">
         </video>
@@ -116,7 +133,9 @@
       </ul>
       <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">svg</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="./img/svg/htmlacademy.svg" alt="" width="27px">
+        </a>
       </div>
     </div>
 
