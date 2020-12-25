@@ -1,10 +1,151 @@
-//Mobile menu
-
 
 //Header
 
+ .header {
+  display: flex;
+  flex-direction: column;
+  .bold-center-text;
+  line-height: 40px;
+ }
+
+ .header-nav {
+  background-color: @blue;
+ }
+
+ .site-list__item-mobile-only {
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.2);
+ }
+
+ .site-list__item_bottom-shadow {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.2) 100%);
+ }
+
+ .site-list__item-mobile-only > a {
+   color: @white;
+ }
+
+ .header__button-open,
+ .header-nav__button-close {
+  width: 22px;
+  height: 22px;
+ }
+
+ .header__logo {
+   display: flex;
+   justify-content: flex-end;
+   height: 56px;
+   background-color: @white;
+ }
+
+ .logo__mobile-only {
+   position: absolute;
+   top: 213px;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+
+ .header__button-open {
+   margin: 17px;
+ }
+
+ .hidden {
+   display: none;
+ }
+
+  @media (min-width: @tablet-width) {
+
+    .header {
+      line-height: 26px;
+      font-size: 14px;
+    }
+
+    .header-nav__list-t-d {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      height: 56px;
+    }
+
+    .site-list__item {
+      align-self: center;
+    }
+
+    .site-list__item > a {
+      color: @black;
+    }
+
+    .hidden {
+      display: block;
+    }
+
+    .mobile-only {
+      display: none;
+    }
+
+  }
+
 
 //Intro
+
+
+.intro__header-vector {
+  background-image: url(../../img/mobile/back-mobile.jpg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  height: 389px;
+  padding-top: 80px;
+}
+
+.vector {
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 214px;
+}
+
+
+.vector__text-welcome {
+  order: 1;
+}
+
+.vector__text {
+  order: 2;
+}
+
+.vector__header {
+  order: 3;
+}
+
+.vector__text-slogan {
+  order: 4;
+}
+
+@media (min-width: @tablet-width) {
+
+  .intro__header-vector {
+    background-image: url(../../img/tablet/back-tablet.jpg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    height: 518px;
+    padding-top: 80px;
+  }
+
+  .vector {
+    width: 461px;
+    height: 350px;
+  }
+
+}
+
+.intro__wrapper {
+  text-align: center;
+}
 
 
 .intro__slogan-text {
@@ -14,10 +155,17 @@
 
 .intro__text {
   .normal-center-text;
-  font-size: 26px;
+  font-size: 14px;
   color: @dark-gray;
 }
 
+.intro__slogan {
+  padding: 32px 18px 52px 18px;
+}
+
+.intro__slogan-text {
+  margin-bottom: 30px;
+}
 
 //First, second  and other reasons style
 .reason {
@@ -46,6 +194,20 @@
   .normal-center-text;
 }
 
+.reason-text {
+  display: flex;
+  flex-direction: column;
+  padding: 55px 12px 39px 12px;
+}
+
+.first-reason__number {
+  margin: 15px 0;
+}
+
+.first-reason__img {
+  margin: 0 auto;
+}
+
 //Features
 
 .features__title {
@@ -55,6 +217,9 @@
 .features__desc {
   .normal-left-text;
 }
+
+
+
 
 
 //Form-popup
