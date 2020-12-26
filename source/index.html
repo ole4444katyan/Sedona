@@ -111,11 +111,12 @@
     <section class="first-reason">
       <div class="first-reason__wrapper reason">
         <div class="reason-text">
-          <h2 class="first-reason__header title-text-white">Настоящий городок</h2>
-          <span class="first-reason__number text-white">№1</span>
-          <p class="first-reason__text text-white">Cедона не аттракцион для туристов, там течет своя жизнь</p>
+          <h2 class="reason__header title-text-white">Настоящий городок</h2>
+          <span class="reason__number text-white">№1</span>
+          <p class="reason__text text-white">Cедона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <img src="./img/mobile/photo-city@1x 1.png" alt="Уютный домик снаружи" class="first-reason__img">
+        <img src="./img/mobile/photo-city@1x 1.png" alt="Уютный домик снаружи" class="reason__img">
+
       </div>
     </section>
     <section class="features">
@@ -123,26 +124,39 @@
       <div class="features__wrapper ">
         <ul class="features__list">
           <li class="features__item features__item_house">
-            <h3 class="features__title">Жилье</h3>
-            <p class="features__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <img src="./img/svg/icon-house.svg.svg" alt="" class="features__img">
+            <div class="features__text">
+              <h3 class="features__title">Жилье</h3>
+              <p class="features__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </div>
           </li>
           <li class="features__item features__item_souvenirs">
-            <h3 class="features__title">Сувениры</h3>
-            <p class="features__desc">Не только китайского, но и местного производства!</p>
+            <img src="./img/svg/icon-gift.svg.svg" alt="" class="features__img">
+            <div class="features__text">
+              <h3 class="features__title">Сувениры</h3>
+              <p class="features__desc">Не только китайского, но и местного производства!</p>
+            </div>
           </li>
           <li class="features__item features__item_food">
-            <h3 class="features__title">Еда</h3>
-            <p class="features__desc">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            <img src="./img/svg/icon-burger.svg.svg" alt="" class="features__img">
+            <div class="features__text">
+              <h3 class="features__title">Еда</h3>
+              <p class="features__desc">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+            </div>
           </li>
         </ul>
       </div>
     </section>
     <section class="second-reason">
       <div class="second-reason__wrapper reason">
-        <h2 class="second-reason__header title-text-white">Там есть мост дьявола</h2>
-        <span class="second-reason__number text-white">№2</span>
-        <p class="second-reason__text text-white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-        <img src="./img/mobile/photo-bridge@1x 1.png" alt="Очаровательный мост дьявола между каньонами">
+        <div class="reason-text">
+          <h2 class="reason__header title-text-white">Там есть мост дьявола</h2>
+          <span class="reason__number text-white">№2</span>
+          <p class="reason__text text-white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </div>
+        <img src="./img/mobile/photo-bridge@1x 1.png" alt="Очаровательный мост дьявола между каньонами"
+          class="reason__img">
+
       </div>
     </section>
     <section class="other-reasons">
@@ -169,29 +183,31 @@
     </section>
     <section class="form-popup">
       <div class="form-popup__wrapper">
-        <h2 class="form-popup__title">Заинтересовались?</h2>
-        <p class="form-popup__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
-          Cедоне</p>
+        <div class="form-popup__text-wrapper">
+          <h2 class="form-popup__title form-popup__title_wrapper">Заинтересовались?</h2>
+          <p class="form-popup__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
+            в
+            Cедоне</p>
+        </div>
         <a href="form.html" class="form-popup__button-link">Найти гостиницу</a>
       </div>
     </section>
     <section class="map">
-      <div class="map__land"> <img src="./img/mobile/map-mobile.jpg.png" alt=""></div>
       <div class="map__icon"><img src="./img/svg/map-marker.svg.svg" alt=""></div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
-      <h2 class="footer__title">#visitsedona</h2>
+      <h2 class="footer__title title-text">#visitsedona</h2>
       <ul class="footer__social social">
-        <li class="social__item"><a href="twitter.ru" class="social__link_twitter">tw</a></li>
-        <li class="social__item"><a href="fb.ru" class="social__link_facebook">fb</a></li>
-        <li class="social__item"><a href="youtube.ru" class="social__link_toytube">u</a></li>
+        <li class="social__item"><a href="twitter.ru" class="social__link_twitter"><img src="./img/svg/icon-twitter.svg" alt="" class=""></a></li>
+        <li class="social__item"><a href="fb.ru" class="social__link_facebook"><img src="./img/svg/icon-facebook.svg" alt="" class=""></a></li>
+        <li class="social__item"><a href="youtube.ru" class="social__link_youtube"><img src="./img/svg/icon-youtube.svg" alt="" class=""></a></li>
       </ul>
       <div class="footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/svg/htmlacademy.svg"
-            alt="" width="27px"></a>
+        <b class="copyright__text-wrapper copyright__text">Разработано</b>
+        <a class="copyright__link-wrapper copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/svg/htmlacademy.svg"
+            alt="" width="30px"></a>
       </div>
     </div>
   </footer>

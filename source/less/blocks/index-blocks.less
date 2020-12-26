@@ -4,6 +4,7 @@
  .header {
   display: flex;
   flex-direction: column;
+
   .bold-center-text;
   line-height: 40px;
  }
@@ -167,7 +168,7 @@
   margin-bottom: 30px;
 }
 
-//First, second  and other reasons style
+//First and second reasons style
 .reason {
   background-color: @blue;
 }
@@ -194,19 +195,25 @@
   .normal-center-text;
 }
 
+.reason {
+  display: flex;
+  flex-direction: column;
+}
+
 .reason-text {
   display: flex;
   flex-direction: column;
-  padding: 55px 12px 39px 12px;
+  padding: 55px 12px 38px 12px;
 }
 
-.first-reason__number {
+.reason__number {
   margin: 15px 0;
 }
 
-.first-reason__img {
-  margin: 0 auto;
+.reason__img {
+  //margin: 0 auto;
 }
+
 
 //Features
 
@@ -218,14 +225,57 @@
   .normal-left-text;
 }
 
+.features__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.features__item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.features__img {
+  margin: 26px 9px 0 21px;
+  width: 39px;
+}
+
+.features__text {
+  margin-top: 35px;
+  padding-right: 21px;
+}
 
 
+.features__item:last-child {
+  margin-bottom: 35px;
+}
 
+
+.features__title {
+  margin-bottom: 15px;
+}
+
+//Other reasons style
+
+.other-reasons__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.other-reasons__item {
+  display: flex;
+  flex-direction: column;
+
+  margin: 26px 26px 0 26px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid @other-reason-border-gray;
+}
 
 //Form-popup
 
 .form-popup__title {
   .bold-center-text;
+  font-size: 21px;
   color: @black;
 }
 
@@ -239,14 +289,72 @@
   color: @white;
 }
 
-
 .form-popup__wrapper {
   display: flex;
   flex-direction: column;
+  margin-bottom: 49px;
 }
 
+.form-popup__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 33px 29px 26px 29px;
+}
 
+.form-popup__title_wrapper {
+  margin-bottom: 30px;
+}
+
+.form-popup__button-link {
+  .bold-center-text;
+  font-size: 21px;
+
+  margin: 0 20px;
+  padding: 15px 32px;
+}
 
 //Map
 
+.map {
+  background-image: url(../../img/mobile/map-mobile.jpg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
 
+  height: 350px;
+}
+
+//Footer
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  width: 151px;
+}
+
+.footer__copyright {
+  display: flex;
+  align-content: center;
+
+  margin: 40px 0 23px 0;
+}
+
+.footer__title {
+  margin: 39px 0 34px 0;
+}
+
+
+.title-text {
+  .bold-center-text;
+  font-size: 21px;
+}
+
+.copyright__text {
+  .normal-center-text;
+  line-height: 26px;
+}
