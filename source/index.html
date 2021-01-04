@@ -10,17 +10,17 @@
 
 <body class="body">
   <header class="header">
-    <div class="header-nav__wrapper mobile-only">
+    <div class="header__nav__wrapper mobile-only">
       <nav class="header__nav header-nav">
         <div class="header-nav__wrapper">
 
-          <ul class="header-nav__list site-list">
+          <ul class="header__nav__list site-list">
             <li class="site-list__item-mobile-only">
               <a href="#">
                 Главная
               </a>
               <button class="header-nav__button-close" type="button"><img src="./img/svg/btn-close.svg" alt="Закрыть
-          меню" width="22px"><span class="visually-hidden">Закрыть
+          меню" width="22"><span class="visually-hidden">Закрыть
                   меню</span></button>
             </li>
             <li class="site-list__item-mobile-only">
@@ -47,7 +47,7 @@
         </a>
 
         <button class="header__button-open" type="button"><img src="./img/svg/btn-open.svg" alt="Открыть меню"
-            width="22px"><span class="visually-hidden">Открыть меню</span></button>
+            width="22"><span class="visually-hidden">Открыть меню</span></button>
       </div>
 
     </div>
@@ -55,8 +55,8 @@
 
   <header class="header">
     <nav class="header__nav">
-      <div class="header-nav__wrapper hidden hidden-desktop-only">
-        <ul class="header-nav__list-t-d site-list ">
+      <div class="header__nav__wrapper hidden hidden-desktop-only">
+        <ul class="header__nav__list-t-d site-list ">
           <li class="site-list__item">
             <a href="#">
               Главная
@@ -69,8 +69,8 @@
           </li>
           <li class="logo">
             <a>
-              <img class="header__logo-image" src="./img/svg/logotype-mobile.svg.svg" width="102" height="84"
-                alt="SEDONA» " class="hidden">
+              <img class="header__logo-image hidden" src="./img/svg/logotype-mobile.svg.svg" width="102" height="84"
+                alt="SEDONA»">
             </a>
           </li>
           <li class="site-list__item">
@@ -92,13 +92,14 @@
   <main class="main">
     <h1 class="visually-hidden">Описание, преимущества и причины здесь жить</h1>
     <section class="intro">
+      <h2 class="visually-hidden">Интро</h2>
       <div class="intro__wrapper">
         <div class="intro__header-vector">
           <div class="vector">
-            <h1 class="vector__header"><img src="./img/svg/SEDONA.svg" alt="SEDONA"></h1>
+            <p class="vector__header"><img src="./img/svg/SEDONA.svg" alt="SEDONA"></p>
             <p class="vector__text-welcome"><img src="./img/svg/WELCOME.svg" alt="WELCOME"></p>
-            <p class="vector__text"><img src="./img/svg/-to the gorgeous-.svg" alt="-to the gorgeous-"></p>
-            <p class="vector__text-slogan"><img src="./img/svg/because the Grand Canyon sucks.svg"
+            <p class="vector__text"><img src="./img/svg/-to_the_gorgeous-.svg" alt="-to the gorgeous-"></p>
+            <p class="vector__text-slogan"><img src="./img/svg/because_the_Grand_Canyon_sucks.svg"
                 alt="because the Grand Canyon sucks"></p>
           </div>
         </div>
@@ -115,9 +116,9 @@
           <span class="reason__number text-white">№1</span>
           <p class="reason__text text-white">Cедона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <img src="./img/mobile/photo-city@1x 1.jpg" alt="Уютный домик снаружи" class="reason__img mobile-only">
-        <img src="./img/tablet/tablet-photo-city@1x 1.jpg" alt="Уютный домик снаружи" class="first-reason__img hidden">
-        <img src="./img/desktop/desktop-photo-city@1x (1).jpg" alt="Уютный домик снаружи" class=" hidden-desktop-only">
+        <img src="./img/mobile/photo-city.jpg" alt="Уютный домик снаружи" class="reason__img mobile-only">
+        <img src="./img/tablet/tablet-photo-city.jpg" alt="Уютный домик снаружи" class="first-reason__img hidden">
+        <img src="./img/desktop/desktop-photo-city.jpg" alt="Уютный домик снаружи" class=" hidden-desktop-only">
 
       </div>
     </section>
@@ -156,10 +157,10 @@
           <span class="reason__number text-white">№2</span>
           <p class="reason__text text-white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
-        <img src="./img/mobile/photo-bridge@1x 1.jpg" alt="Очаровательный мост дьявола между каньонами"
+        <img src="./img/mobile/photo-bridge.jpg" alt="Очаровательный мост дьявола между каньонами"
           class="reason__img mobile-only">
-        <img src="./img/tablet/tablet-photo-bridge@1x.jpg" alt="Очаровательный мост дьявола между каньонами" class="reason__img second-reason__img hidden">
-        <img src="./img/desktop/desktop-photo-bridge@1x (1).jpg" alt="Очаровательный мост дьявола между каньонами" class=" hidden-desktop-only">
+        <img src="./img/tablet/tablet-photo-bridge.jpg" alt="Очаровательный мост дьявола между каньонами" class="reason__img second-reason__img hidden">
+        <img src="./img/desktop/desktop-photo-bridge.jpg" alt="Очаровательный мост дьявола между каньонами" class=" hidden-desktop-only">
 
       </div>
     </section>
@@ -197,6 +198,7 @@
       </div>
     </section>
     <section class="map">
+      <h2 class="visually-hidden">Карта</h2>
       <div class="map__icon"><img src="./img/svg/map-marker.svg.svg" alt=""></div>
     </section>
   </main>
@@ -211,7 +213,7 @@
       <div class="footer__copyright copyright">
         <b class="copyright__text-wrapper copyright__text">Разработано</b>
         <a class="copyright__link-wrapper copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/svg/htmlacademy.svg"
-            alt="" width="30px"></a>
+            alt="" width="30"></a>
       </div>
     </div>
   </footer>
