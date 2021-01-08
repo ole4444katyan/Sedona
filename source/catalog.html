@@ -3,26 +3,76 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="body">
+
+
   <header class="header">
-    <nav class="header__nav header-nav">
-      <div class="header-nav__wrapper">
-        <button class="header-nav__button-close" type="button"><img src="./img/svg/btn-close.svg" alt="Закрыть
-          меню" width="22px"><span class="visually-hidden">Закрыть
-            меню</span></button>
-        <ul class="header-nav__list site-list">
+    <div class="header__nav__wrapper mobile-only">
+      <nav class="header__nav header-nav">
+        <div class="header-nav__wrapper">
+
+          <ul class="header__nav__list site-list">
+            <li class="site-list__item-mobile-only">
+              <a href="#">
+                Главная
+              </a>
+              <button class="header-nav__button-close" type="button"><img src="./img/svg/btn-close.svg" alt="Закрыть
+          меню" width="22"><span class="visually-hidden">Закрыть
+                  меню</span></button>
+            </li>
+            <li class="site-list__item-mobile-only">
+              <a href="catalog.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item-mobile-only">
+              <a href="form.html">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item-mobile-only site-list__item_bottom-shadow">
+              <a target="_blank" href="https://htmlacademy.ru/intensive/adaptive">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header__logo">
+        <a class="logo logo__mobile-only">
+          <img class="logo__image" src="./img/svg/logotype-mobile.svg.svg" width="102" height="84" alt="SEDONA»">
+        </a>
+
+        <button class="header__button-open" type="button"><img src="./img/svg/btn-open.svg" alt="Открыть меню"
+            width="22"><span class="visually-hidden">Открыть меню</span></button>
+      </div>
+
+    </div>
+  </header>
+
+  <header class="header">
+    <nav class="header__nav">
+      <div class="header__nav__wrapper hidden hidden-desktop-only">
+        <ul class="header__nav__list-t-d site-list ">
           <li class="site-list__item">
-            <a>
+            <a href="#">
               Главная
             </a>
           </li>
           <li class="site-list__item">
             <a href="catalog.html">
               Фото и видео
+            </a>
+          </li>
+          <li class="logo">
+            <a>
+              <img class="header__logo-image hidden hidden-desktop-only" src="./img/svg/logotype-mobile.svg.svg"
+                width="102" height="84" alt="SEDONA»">
             </a>
           </li>
           <li class="site-list__item">
@@ -38,74 +88,82 @@
         </ul>
       </div>
     </nav>
-    <div class="header__logo">
-      <a class="logo" href="index.html">
-        <img class="header__logo-image" src="./img/svg/logotype-mobile.svg.svg" width="102" height="84" alt="SEDONA»">
-      </a>
-
-      <button class="header__button-open" type="button"> <img src="./img/svg/btn-open.svg" alt="Открыть меню"
-          width="22px"><span class="visually-hidden">Открыть меню</span></button>
-    </div>
-    <button class="header__button-open" type="button"><span class="visually-hidden">Открыть меню</span></button>
-
   </header>
+
+
   <main class="main">
     <section class="intro">
 
+      <div class="vector">
+        <h1><img class="vector__header" src="./img/svg/SEDONA.svg" alt="SEDONA" width="229px" height="39px"></h1>
+      </div>
+
       <div class="intro__wrapper">
-
-        <div class="vector">
-          <h1><img class="vector__header" src="./img/svg/SEDONA.svg" alt="SEDONA" width="229px" height="39px"></h1>
-        </div>
-
         <h1 class="intro__title title-text">Фото и видео</h1>
-        <p class="intro__text text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <p class="intro__text text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+          политике и экономике.</p>
       </div>
 
     </section>
     <section class="photo">
       <h2 class="visually hidden"></h2>
       <div class="photo-wrapper">
-        <div class="card">
-          <img class="card__photo" src="./img/mobile/photo-1-mobile.jpg.jpg" alt="Дорога на закате">
+        <div class="card card__1">
+          <img class="card__photo" src="./img/mobile/photo-1-mobile.jpg" alt="Дорога на закате">
           <div class="card__description description">
-            <h3 class="description__title title-text-catalog">Неродные просторы</h3>
-            <cite class="description__author text-catalog">Автор фото: <span class="description__author_name">Борис</span></cite>
+            <div class="card__description--text">
+              <h3 class="description__title title-text-catalog">Неродные просторы</h3>
+              <cite class="description__author text-catalog">Автор фото: <span
+                  class="description__author_name">Борис</span></cite>
+            </div>
             <p class="like-counter">
-              <button class="thumb_up" type="button"><img src="./img/svg/like-icon.svg.svg" alt="" width="23px"><span class="likes-number">1350</span></button>
+              <button class="thumb_up" type="button"><img src="./img/svg/like-icon.svg.svg" alt="" width="23px"><span
+                  class="likes-number">1350</span></button>
             </p>
           </div>
         </div>
 
-        <div class="card">
-          <img class="card__photo" src="./img/mobile/photo-2-mobile.jpg.png" alt="Цветущая веточка на фоне красных гор">
+        <div class="card card__2">
+          <img class="card__photo" src="./img/mobile/photo-2-mobile.jpg" alt="Цветущая веточка на фоне красных гор">
           <div class="card__description description">
-            <h3 class="description__title title-text-catalog">Местная растительность</h3>
-            <cite class="description__author text-catalog">Автор фото: <span class="description__author_name">Сергей</span></cite>
+            <div class="card__description--text">
+              <h3 class="description__title title-text-catalog">Местная растительность</h3>
+              <cite class="description__author text-catalog">Автор фото: <span
+                  class="description__author_name">Сергей</span></cite>
+            </div>
             <p class="like-counter">
-              <button class="thumb_up" type="button"><img src="./img/svg/like-icon.svg.svg" alt="" width="23px"><span class="likes-number">143</span></button>
+              <button class="thumb_up" type="button"><img src="./img/svg/like-icon.svg.svg" alt="" width="23px"><span
+                  class="likes-number">143</span></button>
             </p>
           </div>
         </div>
 
-        <div class="card">
-          <img class="card__photo" src="./img/mobile/photo-3-mobile.jpg.png" alt="Хвойная дорога в гору">
+        <div class="card card__3">
+          <img class="card__photo" src="./img/mobile/photo-3-mobile.jpg" alt="Хвойная дорога в гору">
           <div class="card__description description">
-            <h3 class="description__title title-text-catalog">Дорога на север</h3>
-            <cite class="description__author text-catalog">Автор фото: <span class="description__author_name">Петр</span></cite>
+            <div class="card__description--text">
+              <h3 class="description__title title-text-catalog">Дорога на север</h3>
+              <cite class="description__author text-catalog">Автор фото: <span
+                  class="description__author_name">Петр</span></cite>
+            </div>
             <p class="like-counter">
-              <button class="thumb_up" type="button"><img src="./img/svg/like-icon.svg.svg" alt="" width="23px"><span class="likes-number">96</span></button>
+              <button class="thumb_up" type="button"><img src="./img/svg/like-icon.svg.svg" alt="" width="23px"><span
+                  class="likes-number">96</span></button>
             </p>
           </div>
         </div>
 
-        <div class="card">
-          <img class="card__photo" src="./img/mobile/photo-4-desktop 1.png" alt="Каменный Мост Дьявола">
+        <div class="card card__4">
+          <img class="card__photo" src="./img/mobile/photo-4-mobile.jpg" alt="Каменный Мост Дьявола">
           <div class="card__description description">
-            <h3 class="description__title title-text-catalog">Мост Дьявола</h3>
-            <cite class="description__author text-catalog">Автор фото: <span class="description__author_name">Антон</span></cite>
+            <div class="card__description--text">
+              <h3 class="description__title title-text-catalog">Мост Дьявола</h3>
+              <cite class="description__author text-catalog">Автор фото: <span
+                  class="description__author_name">Антон</span></cite>
+            </div>
             <p class="like-counter">
-              <button class="thumb_up" type="button"><img src="./img/svg/like-icon.svg.svg" alt="" width="23px"><span class="likes-number">254</span></button>
+              <button class="thumb_up" type="button"><img src="./img/svg/like-icon.svg.svg" alt="" width="23px"><span
+                  class="likes-number">254</span></button>
             </p>
           </div>
         </div>
@@ -123,22 +181,22 @@
     </section>
   </main>
   <footer class="footer">
-
     <div class="footer__wrapper">
-      <h2 class="footer__title">#visitsedona</h2>
+      <h2 class="footer__title footer__title-text">#visitsedona</h2>
       <ul class="footer__social social">
-        <li class="social__item"><a href="twitter.ru" class="social__link_twitter">tw</a></li>
-        <li class="social__item"><a href="fb.ru" class="social__link_facebook">fb</a></li>
-        <li class="social__item"><a href="youtube.ru" class="social__link_toytube">u</a></li>
+        <li class="social__item"><a href="twitter.ru" class="social__link_twitter"><img src="./img/svg/icon-twitter.svg"
+              alt="" class=""></a></li>
+        <li class="social__item"><a href="fb.ru" class="social__link_facebook"><img src="./img/svg/icon-facebook.svg"
+              alt="" class=""></a></li>
+        <li class="social__item"><a href="youtube.ru" class="social__link_youtube"><img src="./img/svg/icon-youtube.svg"
+              alt="" class=""></a></li>
       </ul>
       <div class="footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="./img/svg/htmlacademy.svg" alt="" width="27px">
-        </a>
+        <b class="copyright__text-wrapper copyright__text">Разработано</b>
+        <a class="copyright__link-wrapper copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img
+            src="./img/svg/htmlacademy.svg" alt="" width="30"></a>
       </div>
     </div>
-
   </footer>
 </body>
 
