@@ -18,7 +18,7 @@
 
           <ul class="header__nav__list site-list">
             <li class="site-list__item-mobile-only">
-              <a href="#">
+              <a href="index.html">
                 Главная
               </a>
               <button class="header-nav__button-close" type="button"><img src="./img/svg/btn-close.svg" alt="Закрыть
@@ -26,7 +26,7 @@
                   меню</span></button>
             </li>
             <li class="site-list__item-mobile-only">
-              <a href="catalog.html">
+              <a href="#">
                 Фото и видео
               </a>
             </li>
@@ -60,12 +60,12 @@
       <div class="header__nav__wrapper hidden hidden-desktop-only">
         <ul class="header__nav__list-t-d site-list ">
           <li class="site-list__item">
-            <a href="#">
+            <a href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a href="#">
               Фото и видео
             </a>
           </li>
@@ -92,13 +92,14 @@
 
 
   <main class="main">
-    <section class="intro">
+    <section class="catalog-intro">
 
-      <div class="vector">
-        <h1><img class="vector__header" src="./img/svg/SEDONA.svg" alt="SEDONA" width="229px" height="39px"></h1>
+      <div class="catalog-vector">
+        <h1><img class="catalog-vector__header" src="./img/svg/SEDONA.svg" alt="SEDONA" width="229px" height="39px">
+        </h1>
       </div>
 
-      <div class="intro__wrapper">
+      <div class="catalog-intro__wrapper">
         <h1 class="intro__title title-text">Фото и видео</h1>
         <p class="intro__text text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
           политике и экономике.</p>
@@ -171,9 +172,11 @@
     </section>
     <section class="video">
       <div class="video__wrapper">
-        <h2 class="video__title title-text">Все еще сомневаетесь?</h2>
-        <p class="text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video controls poster="./img/mobile/video-mobile.jpg.png">
+        <div class="video__description">
+          <h2 class="video__title title-text">Все еще сомневаетесь?</h2>
+          <p class="text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
+        <video controls poster="./img/mobile/video-mobile.jpg.png" class="video__content">
           <source src="" type="">
           <source src="" type="">
         </video>
